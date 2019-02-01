@@ -4,7 +4,8 @@ pipeline {
         stage('Stage 1') {
             steps {
                 sh 'java -version'
-                sh 'python --version' 
+                sh 'python --version'
+                sh './hello-world.sh' 
             }
         }
     }
